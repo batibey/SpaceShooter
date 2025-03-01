@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Shooter</title>
+    <style>
+        canvas {
+            border: 2px solid white;
+            background-color: black;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+        }
+        #gameOver {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        #restartButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #restartButton:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameOver">
+        <h2>Game Over!</h2>
+        <p id="finalScore">Skorunuz: 0</p>
+        <button id="restartButton">Yeniden Oyna</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
